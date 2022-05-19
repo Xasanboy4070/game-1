@@ -5,13 +5,6 @@ const box = document.querySelector(".box1");
 
 let BOX_SIZE = 25;
 let step = 0;
-// mousedown
-// mouseenter
-// mouseleave
-
-// mousemove
-// mouseout
-// mouseover
 
 let randomX = Math.ceil(Math.random() * 440) + 540;
 let randomY = Math.ceil(Math.random() * 440) + 150;
@@ -25,7 +18,7 @@ function fut() {
   step += 5;
 }
 
-box.addEventListener("mousemove", (e) => {
+document.addEventListener("mousemove", (e) => {
   luch.style.top = `${e.y - 12}px`;
   luch.style.left = `${e.x - 12}px`;
   if (
